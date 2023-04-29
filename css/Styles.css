@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    cursor: url("../img/Pointer.png"),auto;
+}
+
+#cont-home {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/Bg\ 1.png")center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+
+header .container-fluid {
+    max-width: 1600px;
+    width: 80%;
+    padding-top: 40px;
+
+}
+
+header .container-fluid nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+}
+
+nav a.logo {
+    transition: .5s;
+}
+
+
+nav a.logo:hover {
+    transform: scale(1.1);
+}
+
+nav .menu-btn {
+    color: #466574;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav .menu-btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    left: -20px;
+    top: -38px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#menu-oculto {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/Bg\ 1.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    right: -100%;
+    padding-top: 130px;
+    transition: .8s;
+}
+#menu-oculto.active{
+    right: 0%;
+}
+
+#menu-oculto ul li {
+    list-style: none;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#menu-oculto ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+#menu-oculto ul li a:before {
+    width: 0%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+#menu-oculto ul li a:hover:before {
+    width: 60%;
+    background: #fff;
+}
+
+.container-cards {
+    max-width: 1920px;
+    width: 96%;
+    padding-top: 40px;
+    margin: 80px auto 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    cursor: url("../img/Pointer.png"),auto;
+}
+
+.container-cards .cardApis{
+    position: relative;
+    
+}
+.container-cards .cardApis a{
+    cursor: url("../img/Pointer.png"),auto;
+}
+
+
+.container-cards .cardApis:hover{
+    transition: .4s !important;
+    transform: translateY(-30px);
+}
+
+.container-cards .cardApis img{
+    position: relative;
+    min-width: 268px;
+    height: 389px;
+}
+
+.container-cards .cardApis p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    top: 16%;
+    z-index: 99;
+    color: #fff;
+}
+
+.container-cards .cardApis:nth-child(3) p,
+.container-cards .cardApis:nth-child(4) p,
+.container-cards .cardApis:nth-child(7) p{
+    color: #466574;
+}   
+
+.container-cards .cardApis:nth-child(2){
+    position: relative;
+    z-index: -1;
+    left: -10px;
+    top: 30px;
+}
+
+.container-cards .cardApis:nth-child(3){
+    position: relative;
+    z-index: 1;
+    left: -30px;
+}
+
+.container-cards .cardApis:nth-child(4){
+    position: relative;
+    z-index: 2;
+    left: -50px;
+    top: 30px;
+}
+
+.container-cards .cardApis:nth-child(5){
+    position: relative;
+    z-index: 2;
+    left: -70px;
+}
+
+.container-cards .cardApis:nth-child(6){
+    position: relative;
+    z-index: 3;
+    left: -110px;
+    top: 30px;
+}
+
+.container-cards .cardApis:nth-child(7){
+    position: relative;
+    z-index: 1;
+    left: -140px;
+    
+}
