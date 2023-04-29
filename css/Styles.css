@@ -53,6 +53,7 @@ nav .menu-btn {
     font-size: 16px;
     text-decoration: none;
     cursor: url("../img/Pointer.png"),auto;
+    padding: 30px;
 }
 
 nav .menu-btn::before {
@@ -61,11 +62,32 @@ nav .menu-btn::before {
     width: 100px;
     height: 100px;
     background: #fff;
-    left: -20px;
-    top: -38px;
+    left: 10px;
+    top: -9px;
     z-index: -1;
     border-radius: 50%;
+    animation-name: ondass;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
 }
+
+@keyframes ondass {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.1);
+
+    }
+}
+
 
 #menu-oculto {
     width: 100%;
@@ -137,7 +159,7 @@ nav .menu-btn::before {
 
 
 .container-cards .cardApis:hover{
-    transition: .4s !important;
+    transition: 1s !important;
     transform: translateY(-30px);
 }
 
